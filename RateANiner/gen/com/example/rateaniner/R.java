@@ -143,19 +143,21 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
     public static final class layout {
         public static final int activity_home=0x7f030000;
         public static final int activity_main=0x7f030001;
-        public static final int activity_search_result=0x7f030002;
-        public static final int activity_write_review=0x7f030003;
-        public static final int custom_view=0x7f030004;
-        public static final int fragment_forgot_password=0x7f030005;
-        public static final int fragment_login=0x7f030006;
-        public static final int fragment_register=0x7f030007;
-        public static final int fragment_startup=0x7f030008;
-        public static final int popuplayout=0x7f030009;
+        public static final int activity_professor=0x7f030002;
+        public static final int activity_search_result=0x7f030003;
+        public static final int activity_write_review=0x7f030004;
+        public static final int custom_view=0x7f030005;
+        public static final int fragment_forgot_password=0x7f030006;
+        public static final int fragment_login=0x7f030007;
+        public static final int fragment_register=0x7f030008;
+        public static final int fragment_startup=0x7f030009;
+        public static final int popuplayout=0x7f03000a;
     }
     public static final class menu {
         public static final int home2=0x7f090000;
-        public static final int search_result=0x7f090001;
-        public static final int write_review=0x7f090002;
+        public static final int professor=0x7f090001;
+        public static final int search_result=0x7f090002;
+        public static final int write_review=0x7f090003;
     }
     public static final class string {
         public static final int action_settings=0x7f070009;
@@ -328,6 +330,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int title_activity_home=0x7f070006;
         public static final int title_activity_home2=0x7f070008;
         public static final int title_activity_login=0x7f070003;
+        public static final int title_activity_professor=0x7f0700ab;
         public static final int title_activity_search_result=0x7f07000a;
         public static final int title_activity_write_review=0x7f070010;
         public static final int workload=0x7f07000f;
