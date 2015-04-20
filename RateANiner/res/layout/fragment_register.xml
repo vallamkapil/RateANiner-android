@@ -1,0 +1,141 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/niner_green"
+    tools:context="com.example.rateaniner.RegisterFragment"
+	android:id="@+id/Relative" >
+
+    <ImageView
+        android:id="@+id/lineOneImageview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/envelopeImageView"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:src="@drawable/white_line" />
+
+    <ImageView
+        android:id="@+id/padlockImageView"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignRight="@+id/envelopeImageView"
+        android:layout_below="@+id/lineOneImageview"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/faded_padlock" />
+
+    <ImageView
+        android:id="@+id/envelopeImageView"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignBottom="@+id/emailEditText"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="37dp"
+        android:src="@drawable/faded_envelope" />
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="82dp"
+        android:src="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pwEditText"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:ems="10"
+        android:hint="@string/hint_email"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textColorLink="@color/white"
+        android:textCursorDrawable="@null" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/pwEditText"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lineTwoImageView"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/padlockImageView"
+        android:background="@null"
+        android:ems="10"
+        android:hint="@string/hint_password"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:password="true"
+        android:textColor="@color/white"
+        android:textColorLink="@color/white"
+        android:textCursorDrawable="@null" >
+        
+    </EditText>
+
+    <ImageView
+        android:id="@+id/lineTwoImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/padlockImageView"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:src="@drawable/white_line" />
+
+    <ImageView
+        android:id="@+id/cakeImageView"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lineTwoImageView"
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@+id/pwEditText"
+        android:src="@drawable/faded_cake" />
+
+    <ImageView
+        android:id="@+id/lineThreeImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/cakeImageView"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/white_line" />
+
+    <EditText
+        android:id="@+id/bdayEditText"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lineThreeImageView"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/cakeImageView"
+        android:background="@null"
+        android:ems="10"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textColorLink="@color/white"
+        android:textCursorDrawable="@null"
+        android:focusable="false"
+        android:hint="@string/birthday"
+        android:inputType="date" />
+
+    <ImageView
+        android:id="@+id/signUpIV"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lineThreeImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/sign_up_selector" />
+
+</RelativeLayout>

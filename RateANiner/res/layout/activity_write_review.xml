@@ -1,0 +1,289 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ImageView
+        android:id="@+id/splashLogoImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/banner" />
+
+    <TextView
+        android:id="@+id/nowRatingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/splashLogoImageView"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="26dp"
+        android:text="@string/rating"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageView
+        android:id="@+id/registerIV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/nowRatingTextView"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/grey_line" />
+
+    <TextView
+        android:id="@+id/professorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/registerIV"
+        android:layout_marginLeft="22dp"
+        android:layout_toRightOf="@+id/nowRatingTextView"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/classTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nowRatingTextView"
+        android:layout_below="@+id/registerIV"
+        android:layout_marginTop="31dp"
+        android:text="@string/class_label"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/readingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/subjectTextView"
+        android:layout_below="@+id/subjectTextView"
+        android:paddingTop="15dp"
+        android:text="@string/reading_amount"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/subjectTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/classTextView"
+        android:layout_below="@+id/classTextView"
+        android:paddingTop="15dp"
+        android:text="@string/subject"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/workloadTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/readingTextView"
+        android:layout_below="@+id/readingTextView"
+        android:paddingTop="15dp"
+        android:text="@string/workload"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/difficultyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/workloadTextView"
+        android:layout_below="@+id/workloadTextView"
+        android:paddingTop="15dp"
+        android:text="@string/difficulty"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/friendlinessTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/difficultyTextView"
+        android:layout_below="@+id/difficultyTextView"
+        android:paddingTop="15dp"
+        android:text="@string/friendliness"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <ImageView
+        android:id="@+id/forgotPwIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/subjectTextView"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:src="@drawable/black_line_half_weight" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/readingTextView"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:src="@drawable/black_line_half_weight" />
+
+    <ImageView
+        android:id="@+id/lineTwoImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:src="@drawable/black_line_half_weight" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/workloadTextView"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:src="@drawable/black_line_half_weight" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:layout_below="@+id/workloadTextView"
+        android:src="@drawable/black_line_half_weight" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/friendlinessTextView"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:src="@drawable/black_line_half_weight" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:layout_below="@+id/friendlinessTextView"
+        android:src="@drawable/black_line_half_weight" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/white_submit_button" />
+
+    <TextView
+        android:id="@+id/curvesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/friendlinessTextView"
+        android:layout_below="@+id/imageView8"
+        android:paddingTop="15dp"
+        android:text="@string/curves_grades"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/curvesTextView"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:src="@drawable/black_line_half_weight" />
+
+    <EditText
+        android:id="@+id/classEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/classTextView"
+        android:layout_alignBottom="@+id/classTextView"
+        android:layout_toRightOf="@+id/workloadTextView"
+        android:ems="10"
+        android:textCursorDrawable="@null"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/subjectSelectedTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/subjectTextView"
+        android:layout_alignBottom="@+id/subjectTextView"
+        android:layout_alignLeft="@+id/classEditText"
+        android:layout_alignRight="@+id/classEditText"
+        android:text="Small Text"
+        android:onClick="onClickSubject"
+		android:clickable="true"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/readingSelectedTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/readingTextView"
+        android:layout_alignBottom="@+id/readingTextView"
+        android:layout_alignLeft="@+id/professorTextView"
+        android:layout_alignRight="@+id/subjectSelectedTV"
+        android:text="Small Text"
+        android:onClick="onClickReading"
+		android:clickable="true"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/workloadSelectedTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/workloadTextView"
+        android:layout_alignBottom="@+id/workloadTextView"
+        android:layout_alignRight="@+id/readingSelectedTV"
+        android:layout_toRightOf="@+id/friendlinessTextView"
+        android:text="Small Text"
+        android:onClick="onClickWorkload"
+		android:clickable="true"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/difficultySelectedTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/difficultyTextView"
+        android:layout_alignBottom="@+id/difficultyTextView"
+        android:layout_alignLeft="@+id/workloadSelectedTV"
+        android:layout_alignRight="@+id/workloadSelectedTV"
+        android:text="Small Text"
+        android:onClick="onClickDifficulty"
+		android:clickable="true"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/friendlinessSelectedTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/friendlinessTextView"
+        android:layout_alignRight="@+id/difficultySelectedTV"
+        android:layout_toRightOf="@+id/curvesTextView"
+        android:text="Small Text"
+        android:onClick="onClickFriendliness"
+		android:clickable="true"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/curvesSelectedTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView10"
+        android:layout_toRightOf="@+id/nowRatingTextView"
+        android:text="Small Text"
+        android:onClick="onClickCurves"
+		android:clickable="true"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>
