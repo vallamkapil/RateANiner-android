@@ -2,7 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="${relativePackage}.${activityClass}" >
+    tools:context=".WriteReviewActivity"
+    android:background="@color/white" >
 
     <ImageView
         android:id="@+id/splashLogoImageView"
@@ -112,7 +113,7 @@
         android:src="@drawable/black_line_half_weight" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/rateProfessorImageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -132,7 +133,7 @@
         android:src="@drawable/black_line_half_weight" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/browseSubjectsImageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -285,5 +286,14 @@
         android:onClick="onClickCurves"
 		android:clickable="true"
         android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <RatingBar
+        android:id="@+id/ratingBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/imageView10"
+        android:layout_centerHorizontal="true"
+        style="@style/crownRatingBar"
+        android:layout_marginTop="21dp" />
 
 </RelativeLayout>

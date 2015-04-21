@@ -63,7 +63,7 @@
                 android:src="@drawable/search" />
 
             <EditText
-                android:id="@+id/editText1"
+                android:id="@+id/professorSearchBoxEditText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
@@ -92,7 +92,7 @@
             android:src="@drawable/green_line" />
 
         <ImageView
-            android:id="@+id/imageView4"
+            android:id="@+id/rateProfessorImageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/imageView3"
@@ -105,12 +105,12 @@
         <ImageView
             android:layout_centerHorizontal="true"
             android:layout_marginTop="15dp"
-            android:id="@+id/imageView5"
+            android:id="@+id/browseSubjectsImageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingLeft="30dp"
             android:paddingRight="30dp"
-            android:layout_below="@id/imageView4"
+            android:layout_below="@id/rateProfessorImageView"
             android:src="@drawable/browse_button" />
         
         <ListView 
@@ -118,7 +118,7 @@
             android:id="@+id/mainList"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/imageView5"
+            android:layout_below="@id/browseSubjectsImageView"
             android:layout_marginTop="10dp"
             >
             

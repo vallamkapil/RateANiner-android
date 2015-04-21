@@ -18,8 +18,8 @@ public class WriteReviewActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_write_review);
-		
+		setContentView(R.layout.duplicate_fragment_startup);
+		/*
 		EditText classTaken = (EditText)findViewById(R.id.classEditText);
 		
 		classTaken.addTextChangedListener(new TextWatcher(){
@@ -46,7 +46,7 @@ public class WriteReviewActivity extends Activity {
 			
 			
 		});	
-		
+		*/
 	}
 	
 	public void onClickSubject(View v){
