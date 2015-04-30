@@ -27,7 +27,6 @@
     <string name="hint_password">Password</string>
     <string name="reset_message">Enter your e-mail address and a reset link will be sent.</string>
     <string name="birthday">Birthday</string>
-    
 
     <!-- Subjects -->
 
@@ -176,5 +175,6 @@
     <string name="subject_urban_studies">Urban Studies</string>
     <string name="subject_washington_center_internship">Washington Center Internship</string>
     <string name="subject_womens_gender_studies">Womens Gender Studies</string>
+    <string name="title_activity_professor">ProfessorActivity</string>
 
 </resources>
