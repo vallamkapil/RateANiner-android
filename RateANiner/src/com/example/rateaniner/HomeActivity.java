@@ -7,6 +7,7 @@ import java.util.Locale;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -24,20 +25,23 @@ import com.parse.ParseQuery;
 
 public class HomeActivity extends Activity {
 
-	ImageView browseSubjects, searchBtn;
+	ImageView browseSubjectsButton, rateProfButton, searchBtn;
 	ArrayList<Professor> result;
 	CustomAdapter adapter;
 	ListView mainList;
 	EditText searchET;
 
+	
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_home);
 
-		searchET = (EditText) findViewById(R.id.editText1);
+		searchET = (EditText) findViewById(R.id.professorSearchBoxEditText);
 		result = new ArrayList<Professor>();
-		browseSubjects = (ImageView) findViewById(R.id.imageView5);
+		browseSubjectsButton = (ImageView) findViewById(R.id.browseSubjectsImageView);
+		rateProfButton = (ImageView) findViewById(R.id.rateProfessorImageView);
 		mainList = (ListView) findViewById(R.id.mainList);
 
 		ParseQuery<ParseObject> q = ParseQuery.getQuery("Staff");
@@ -87,6 +91,17 @@ public class HomeActivity extends Activity {
 				// TODO Auto-generated method stub
 			}
 		});
+		
+		rateProfButton.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent i = new Intent(HomeActivity.this, WriteReviewActivity.class);
+				startActivity(i);
+			}
+		});
+		
 	}
 
 	private void showCheckbox() {

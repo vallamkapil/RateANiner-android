@@ -4,6 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/niner_green"
-    tools:context="${relativePackage}.${activityClass}" >
+    tools:context="com.example.rateaniner.MainActivity" >
 
 </RelativeLayout>
